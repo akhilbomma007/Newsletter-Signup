@@ -62,7 +62,7 @@ app.post("/failure", (req,res) => {
     res.sendFile(__dirname + "/signup.html")
 })
 
-app.listen(3000, () => {
+app.listen(process.env.PORT || 3000, () => {
     console.log("server is running on port 3000")
 })
 
